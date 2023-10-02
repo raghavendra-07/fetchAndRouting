@@ -2,6 +2,8 @@
 import {Component} from 'react'
 import Loader from 'react-loader-spinner'
 
+import './index.css'
+
 class BlogItemDetails extends Component {
   state = {blogsData: [], isLoading: true}
 
@@ -30,14 +32,14 @@ class BlogItemDetails extends Component {
     const {title, imageUrl, content, avatarUrl, author} = blogsData
 
     return (
-      <div>
-        <h1>{title}</h1>
-        <div>
-          <img src={avatarUrl} alt={author} />
-          <p>{author}</p>
+      <div className="blog-info">
+        <h1 className="blog-details-title">{title}</h1>
+        <div className="author-details">
+          <img className="author-pic" src={avatarUrl} alt={author} />
+          <p className="details-author-name">{author}</p>
         </div>
-        <img src={imageUrl} alt={title} />
-        <p>{content}</p>
+        <img className="blog-image" src={imageUrl} alt={title} />
+        <p className="blog-content">{content}</p>
       </div>
     )
   }
