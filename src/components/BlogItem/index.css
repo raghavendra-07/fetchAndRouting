@@ -1,0 +1,51 @@
+/* Write your CSS code here */
+.li-con {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px;
+  padding: 30px;
+  border: 1px solid #8e8e8e;
+  border-radius: 10px;
+}
+
+.image-url {
+  height: 180px;
+  width: 390px;
+}
+
+.inner-li-con {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 8px;
+}
+
+.topic {
+  font-family: 'Roboto';
+  color: #8e8e8e;
+}
+
+.title {
+  font-family: 'Roboto';
+  color: #000000;
+}
+
+.avatar-con {
+  display: flex;
+  flex-direction: row;
+}
+
+.avatar-url {
+  border-radius: 500px;
+  height: 40px;
+  width: 40px;
+  margin: 10px;
+}
+
+.author {
+  font-family: 'Roboto';
+  color: #d3d3d3;
+}
